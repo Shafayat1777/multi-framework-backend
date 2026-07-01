@@ -32,7 +32,6 @@ public class OrderItem {
     @Column(name = "price_at_purchase", nullable = false)
     private BigDecimal priceAtPurchase;
 
-    // TODO add relations
     @ManyToOne
     @JoinColumn(name="order_id", nullable=false )
     private Order order;

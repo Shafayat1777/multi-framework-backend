@@ -51,7 +51,6 @@ public class Product {
     @Column(name = "stock_quantity", nullable = false)
     private Integer stockQuantity;
 
-    // TODO add relations
     @JsonIgnore
     @OneToMany(mappedBy = "product")
     private List<OrderItem> orderItems;
